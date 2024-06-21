@@ -1,0 +1,30 @@
+'''
+testcase-1:
+    input:
+        khoor
+        3
+    output:
+        hello
+testcase-2:
+    input:
+        bcdmnwc
+        9        
+    output:
+        student
+testcase-3:
+    input:
+        bvec
+        4
+    output:
+        xray
+'''
+s=input()
+key=int(input())
+res=''
+c=key%26
+for i in range(len(s)):
+    if ((ord(i)-c)>=97):
+        d=d+chr(ord(i)-c)
+    else:
+        d=d+chr(ord(i)-36)    
+print(d)

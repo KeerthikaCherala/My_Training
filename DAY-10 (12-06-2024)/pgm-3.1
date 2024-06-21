@@ -1,0 +1,12 @@
+'''
+    input:
+        "hello:5438, car:214, book:879, apple:2187"
+    output:
+        oaxp
+'''
+def extract_first_chars(input_string):
+    words = input_string.replace(":", ",").replace(" ", "").split(",")
+    return ''.join(word[0] for word in words)
+
+input_string = "hello:5438, car:214, book:879, apple:2187"
+print(extract_first_chars(input_string))  # Outputs: oacb
